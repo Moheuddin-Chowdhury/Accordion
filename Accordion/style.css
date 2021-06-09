@@ -1,0 +1,51 @@
+.container{
+    margin: 50px 100px;
+}
+h3{
+    background-color: rgb(209, 207, 207);
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    transition: background-color 2s;
+}
+h3:hover{
+    background-color: gray;
+}
+p{
+    padding: 10px;
+    margin: 10px 20px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(80, 82, 76);
+    display: none;
+    border-radius: 10px;
+    animation-name: para;
+    animation-duration: 2s;
+}
+@keyframes para {
+    0%{
+        opacity: 0.2;
+        font-size: small;
+    }25%{
+        opacity: .5;
+        font-size: large;
+    }75%{
+        opacity: .7;
+    }100%{
+        opacity: 1;
+        font-size: larger;
+    }
+}
+.show{
+    display: block;
+}
+span{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.sign{
+    display: none;
+}
